@@ -1,4 +1,5 @@
 <template>
+
     <main class="container">
 
         <div class="my-4 pb-3 border-bottom">
@@ -7,7 +8,7 @@
 
                 <div class="col-md-4">
                     <h1 class="h mb-0 lh-1">{{pageTitle}}</h1>
-                    <small class="d-block mb-3 mb-md-0">O front foi criado utilizando VUE 3 e Bootstrap</small>
+                    <small class="d-block mb-3 mb-md-0">Lorem ipsum</small>
                 </div>
 
                 
@@ -22,10 +23,10 @@
 <script>
 
 export default {
-    name: 'About',
+    name: 'Start',
     data() {
         return{
-            pageTitle: 'About'
+            pageTitle: 'Home'
         }
     }
 }

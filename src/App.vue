@@ -1,30 +1,41 @@
 <template>
-  <div id="nav">
-    <router-link to="/">Home</router-link> |
-    <router-link to="/about">About</router-link>
-  </div>
-  <router-view/>
+
+    <Navigation />
+    <router-view/>
+    <Footer />
+
 </template>
 
+<script>
+
+import Navigation from '@/components/Navigation'
+import Footer from '@/components/Footer'
+
+export default{
+    components:{
+        Navigation,
+        Footer
+    },
+}
+
+</script>
+
 <style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-}
 
-#nav {
-  padding: 30px;
-}
+    body{
+        background-color: #f8f9fa !important;
+    }
 
-#nav a {
-  font-weight: bold;
-  color: #2c3e50;
-}
+    .nav-underline .nav-link {
+        padding-top: .75rem;
+        padding-bottom: .75rem;
+        font-size: .875rem;
+        color: #6c757d;
+    }
 
-#nav a.router-link-exact-active {
-  color: #42b983;
-}
+    .nav-underline .active {
+        font-weight: 500;
+        color: #343a40;
+    }
+
 </style>
