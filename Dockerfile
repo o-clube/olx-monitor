@@ -1,7 +1,6 @@
 FROM node:16
 
 RUN apt-get update -y \
-    && apt-get install -y ffmpeg\
     && rm -rf /var/lib/apt/lists/*
 
 WORKDIR /app
